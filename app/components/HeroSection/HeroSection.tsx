@@ -15,8 +15,12 @@ export default function HeroSection() {
         />
       </div>
       <div className="flex flex-col items-center w-fit-content z-10">
-        <h1 className="font-tan text-5xl">Lic. Antonella Strangio</h1>
-        <p className="justify-end text-xl">Nutricion Lorem ipsum dolor sit</p>
+        <h1 className="font-tan sm:text-5xl text-3xl">
+          Lic. Antonella Strangio
+        </h1>
+        <p className="justify-end sm:text-xl text-l">
+          Nutricion Lorem ipsum dolor sit
+        </p>
       </div>
     </div>
   );
