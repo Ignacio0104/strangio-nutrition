@@ -23,7 +23,7 @@ export default function Header() {
   return (
     <header className="flex">
       <div className="flex flex-row justify-between items-center h-16 px-4 w-full">
-        <div className="flex flex-row cursor-pointer">
+        <div className="flex flex-row cursor-pointer items-center">
           <Image
             src="/resources/images/food-icon.png"
             alt="Page logo"
