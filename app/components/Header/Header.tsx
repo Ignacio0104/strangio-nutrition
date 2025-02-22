@@ -3,6 +3,7 @@ import { Menu, X } from "lucide-react";
 import Image from "next/image";
 import "./Header.scss";
 import { useEffect, useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 
 export default function Header() {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
@@ -21,8 +22,8 @@ export default function Header() {
 
   return (
     <header className="flex">
-      <div className="flex flex-row justify-between items-center h-16 pr-4 w-full">
-        <div className="flex flex-row">
+      <div className="flex flex-row justify-between items-center h-16 px-4 w-full">
+        <div className="flex flex-row cursor-pointer">
           <Image
             src="/resources/images/food-icon.png"
             alt="Page logo"
@@ -65,46 +66,54 @@ export default function Header() {
           </button>
         </div>
       </div>
-      {showMobileMenu && (
-        <div className="absolute inset-0 bg-white z-50 flex flex-col items-center justify-center transition-all duration-500 animate-fade-in-0.3">
-          <button
-            onClick={() => setShowMobileMenu((prevState) => !prevState)}
-            className="absolute top-5 right-9"
+      <AnimatePresence>
+        {showMobileMenu && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.3 }}
+            className="absolute inset-0 bg-white z-50 flex flex-col items-center justify-center"
           >
-            <X size={28} />
-          </button>
+            <button
+              onClick={() => setShowMobileMenu((prevState) => !prevState)}
+              className="absolute top-5 right-6"
+            >
+              <X size={28} />
+            </button>
 
-          <ul className="space-y-6 text-xl">
-            <li>
-              <a
-                href="#home"
-                onClick={() => console.log("Click")}
-                className="hover:text-blue-500"
-              >
-                Acerca de mí
-              </a>
-            </li>
-            <li>
-              <a
-                href="#about"
-                onClick={() => console.log("Click")}
-                className="hover:text-blue-500"
-              >
-                Servicios
-              </a>
-            </li>
-            <li>
-              <a
-                href="#contact"
-                onClick={() => console.log("Click")}
-                className="hover:text-blue-500"
-              >
-                Contacto
-              </a>
-            </li>
-          </ul>
-        </div>
-      )}
+            <ul className="space-y-6 text-xl">
+              <li>
+                <a
+                  href="#home"
+                  onClick={() => console.log("Click")}
+                  className="hover:text-blue-500"
+                >
+                  Acerca de mí
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#about"
+                  onClick={() => console.log("Click")}
+                  className="hover:text-blue-500"
+                >
+                  Servicios
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#contact"
+                  onClick={() => console.log("Click")}
+                  className="hover:text-blue-500"
+                >
+                  Contacto
+                </a>
+              </li>
+            </ul>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </header>
   );
 }

@@ -1,7 +1,9 @@
+import HeroSection from "./components/HeroSection/HeroSection";
+
 export default function Home() {
   return (
-    <main className="pt-40 bg-slate-300 h-screen">
-      <h1>Antonella Strangio Nutricion</h1>
+    <main className="bg-slate-300 h-screen">
+      <HeroSection />
       <p>Prueba de layout</p>
       <button>
         <a

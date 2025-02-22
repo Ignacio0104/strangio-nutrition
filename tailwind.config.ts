@@ -26,6 +26,9 @@ export default {
         "fade-in-0.3": "fadeIn 0.3s ease-out",
         "fade-out-0.3": "fadeOut 0.3s ease-out",
       },
+      fontFamily: {
+        tan: ["TAN Meringue", "sans-serif"],
+      },
     },
   },
   plugins: [],
