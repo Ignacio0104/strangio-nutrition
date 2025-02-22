@@ -1,6 +1,6 @@
 export default function Home() {
   return (
-    <main className="pt-40">
+    <main className="pt-40 bg-slate-300 h-screen">
       <h1>Antonella Strangio Nutricion</h1>
       <p>Prueba de layout</p>
       <button>
