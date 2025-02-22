@@ -25,7 +25,7 @@ export default function Header() {
       <div className="flex flex-row justify-between items-center h-16 px-4 w-full">
         <div className="flex flex-row cursor-pointer items-center">
           <Image
-            src="/resources/images/food-icon.png"
+            src="/resources/Images/food-icon.png"
             alt="Page logo"
             width={40}
             height={40}
