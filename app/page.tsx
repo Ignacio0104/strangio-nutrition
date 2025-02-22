@@ -1,6 +1,6 @@
 export default function Home() {
   return (
-    <div>
+    <main className="pt-40">
       <h1>Antonella Strangio Nutricion</h1>
       <p>Prueba de layout</p>
       <button>
@@ -11,6 +11,6 @@ export default function Home() {
           Mandame un whatsapp
         </a>
       </button>
-    </div>
+    </main>
   );
 }
