@@ -28,7 +28,7 @@ export default function Header() {
 
   const toggleMenu = () => setShowMobileMenu((prevState) => !prevState);
   return (
-    <header className="sticky top-0 bg-white shadow-md z-50 ">
+    <header className="sticky top-0 bg-white shadow-md z-50">
       <div className="flex flex-row justify-between items-center h-16 px-4 w-full">
         <div
           onClick={scrollToTop}
@@ -41,7 +41,11 @@ export default function Header() {
             height={40}
             priority
           />
-          <p className="text-xl pl-4" aria-label="Header" role="banner">
+          <p
+            className="select-none text-xl pl-4"
+            aria-label="Header"
+            role="banner"
+          >
             Antonella Strangio
           </p>
         </div>
