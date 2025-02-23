@@ -11,6 +11,10 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        "white-cream": "var(--white-cream)",
+        beige: "var(--beige)",
+        "dark-green": "var(--dark-green)",
+        pink: "var(--pink)",
       },
       keyframes: {
         fadeIn: {
