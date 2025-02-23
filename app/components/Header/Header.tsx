@@ -28,7 +28,7 @@ export default function Header() {
 
   const toggleMenu = () => setShowMobileMenu((prevState) => !prevState);
   return (
-    <header className="sticky top-0 bg-white shadow-md z-50">
+    <header className="sticky top-0 bg-pink shadow-md z-50 text-white-cream">
       <div className="flex flex-row justify-between items-center h-16 px-4 w-full">
         <div
           onClick={scrollToTop}
@@ -53,17 +53,17 @@ export default function Header() {
         <nav className="hidden sm:flex">
           <ul className="flex space-x-4">
             <li>
-              <Link className="hover:text-blue-500" href="/#acerca-de-mi">
+              <Link className="hover:text-dark-green" href="/#acerca-de-mi">
                 Acerca de mí
               </Link>
             </li>
             <li>
-              <Link className="hover:text-blue-500" href="/#servicios">
+              <Link className="hover:text-dark-green" href="/#servicios">
                 Servicios
               </Link>
             </li>
             <li>
-              <Link className="hover:text-blue-500" href="#contact">
+              <Link className="hover:text-dark-green" href="#contact">
                 Contacto
               </Link>
             </li>
@@ -85,7 +85,7 @@ export default function Header() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.3 }}
-            className="absolute h-screen inset-0 bg-white z-50 flex flex-col items-center justify-center"
+            className="absolute h-screen inset-0 bg-white z-50 flex flex-col items-center justify-center text-dark-green"
           >
             <button
               onClick={() => setShowMobileMenu((prevState) => !prevState)}
@@ -98,7 +98,7 @@ export default function Header() {
               <li>
                 <Link
                   onClick={toggleMenu}
-                  className="hover:text-blue-500"
+                  className="hover:text-pink"
                   href="/#acerca-de-mi"
                 >
                   Acerca de mí
@@ -107,7 +107,7 @@ export default function Header() {
               <li>
                 <Link
                   onClick={toggleMenu}
-                  className="hover:text-blue-500"
+                  className="hover:text-pink"
                   href="/#servicios"
                 >
                   Servicios
@@ -116,7 +116,7 @@ export default function Header() {
               <li>
                 <Link
                   onClick={toggleMenu}
-                  className="hover:text-blue-500"
+                  className="hover:text-pink"
                   href="#contact"
                 >
                   Contacto
