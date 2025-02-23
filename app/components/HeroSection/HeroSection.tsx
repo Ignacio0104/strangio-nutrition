@@ -3,7 +3,10 @@ import React from "react";
 
 export default function HeroSection() {
   return (
-    <div className="relative h-[calc(100vh-4rem)] flex pt-40 justify-center">
+    <div
+      id="/"
+      className="relative h-[calc(100vh-4rem)] flex pt-40 justify-center"
+    >
       <div className="absolute inset-0 z-0 opacity-40">
         <Image
           src="/resources/Images/fondo-vegetables.jpg"
