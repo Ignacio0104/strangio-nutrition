@@ -4,6 +4,7 @@ import Image from "next/image";
 import "./Header.scss";
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import Link from "next/link";
 
 export default function Header() {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
@@ -20,10 +21,19 @@ export default function Header() {
     };
   }, [showMobileMenu]);
 
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+    window.history.pushState({}, "", "/");
+  };
+
+  const toggleMenu = () => setShowMobileMenu((prevState) => !prevState);
   return (
-    <header className="flex">
+    <header className="sticky top-0 bg-white shadow-md z-50 ">
       <div className="flex flex-row justify-between items-center h-16 px-4 w-full">
-        <div className="flex flex-row cursor-pointer items-center">
+        <div
+          onClick={scrollToTop}
+          className="flex flex-row cursor-pointer items-center"
+        >
           <Image
             src="/resources/Images/food-icon.png"
             alt="Page logo"
@@ -39,27 +49,25 @@ export default function Header() {
         <nav className="hidden sm:flex">
           <ul className="flex space-x-4">
             <li>
-              <a href="#home" className="hover:text-blue-500">
+              <Link className="hover:text-blue-500" href="/#acerca-de-mi">
                 Acerca de mí
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#about" className="hover:text-blue-500">
+              <Link className="hover:text-blue-500" href="/#servicios">
                 Servicios
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#contact" className="hover:text-blue-500">
+              <Link className="hover:text-blue-500" href="#contact">
                 Contacto
-              </a>
+              </Link>
             </li>
           </ul>
         </nav>
         <div className="flex sm:hidden justify-end pt-4 py-4">
           <button
-            onClick={() => {
-              setShowMobileMenu((prevState) => !prevState);
-            }}
+            onClick={toggleMenu}
             className="flex sm:hidden hamburger-menu-container"
           >
             <Menu />
@@ -73,7 +81,7 @@ export default function Header() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.3 }}
-            className="absolute inset-0 bg-white z-50 flex flex-col items-center justify-center"
+            className="absolute h-screen inset-0 bg-white z-50 flex flex-col items-center justify-center"
           >
             <button
               onClick={() => setShowMobileMenu((prevState) => !prevState)}
@@ -84,31 +92,31 @@ export default function Header() {
 
             <ul className="space-y-6 text-xl">
               <li>
-                <a
-                  href="#home"
-                  onClick={() => console.log("Click")}
+                <Link
+                  onClick={toggleMenu}
                   className="hover:text-blue-500"
+                  href="/#acerca-de-mi"
                 >
                   Acerca de mí
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#about"
-                  onClick={() => console.log("Click")}
+                <Link
+                  onClick={toggleMenu}
                   className="hover:text-blue-500"
+                  href="/#servicios"
                 >
                   Servicios
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#contact"
-                  onClick={() => console.log("Click")}
+                <Link
+                  onClick={toggleMenu}
                   className="hover:text-blue-500"
+                  href="#contact"
                 >
                   Contacto
-                </a>
+                </Link>
               </li>
             </ul>
           </motion.div>
