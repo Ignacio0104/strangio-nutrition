@@ -3,7 +3,7 @@ import React from "react";
 
 export default function HeroSection() {
   return (
-    <div
+    <section
       id="/"
       className="relative h-[calc(100vh-4rem)] flex pt-40 justify-center"
     >
@@ -25,6 +25,6 @@ export default function HeroSection() {
           Nutricion Lorem ipsum dolor sit
         </p>
       </div>
-    </div>
+    </section>
   );
 }
