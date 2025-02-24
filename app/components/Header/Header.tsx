@@ -28,7 +28,7 @@ export default function Header() {
 
   const toggleMenu = () => setShowMobileMenu((prevState) => !prevState);
   return (
-    <header className="sticky top-0 bg-pink shadow-md z-50 text-white-cream">
+    <header className="sticky top-0 bg-white-cream shadow-md z-50 text-pink">
       <div className="flex flex-row justify-between items-center h-16 px-4 w-full">
         <div
           onClick={scrollToTop}
