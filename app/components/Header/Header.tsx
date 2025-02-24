@@ -35,10 +35,10 @@ export default function Header() {
           className="flex flex-row cursor-pointer items-center"
         >
           <Image
-            src="/resources/Images/food-icon.png"
+            src="/resources/Images/anto-logo.png"
             alt="Page logo"
-            width={40}
-            height={40}
+            width={35}
+            height={35}
             priority
           />
           <p
