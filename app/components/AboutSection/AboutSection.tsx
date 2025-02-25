@@ -26,7 +26,7 @@ export default function AboutSection() {
           />
         </div>
         <div className="flex flex-1 md:flex-[2] lg:flex-[3] justify-center">
-          <div className="about-me-container p-5 sm:p-10 w-[80%] sm:w-full sm:h-full h-[80%] sm:pr-10 rounded-lg text-white-cream">
+          <div className="about-me-container p-5 sm:p-10 w-[80%] sm:w-full sm:h-full h-[fit-content] sm:pr-10 rounded-lg text-white-cream">
             <h3 className="font-tan pb-2">Sobre mí</h3>
             <p className="">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam
