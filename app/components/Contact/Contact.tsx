@@ -19,13 +19,22 @@ export default function Contact() {
           priority
         />
       </div>
-      <div className="absolute top-[30vh] right-[-100px] opacity-70">
+      <div className="absolute top-[30vh] right-[-100px] opacity-50">
+        <Image
+          src="/resources/Images/fruit_3789759.png"
+          alt="fruit logo"
+          width={400}
+          height={400}
+          priority
+          className="block sm:hidden"
+        />
         <Image
           src="/resources/Images/fruit_3789759.png"
           alt="fruit logo"
           width={500}
           height={500}
           priority
+          className="hidden sm:block"
         />
       </div>
 

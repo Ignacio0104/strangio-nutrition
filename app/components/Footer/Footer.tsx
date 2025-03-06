@@ -14,7 +14,7 @@ export default function Footer() {
             priority
           />
         </div>
-        <div className="flex flex-row sm:flex-col justify-center items-center w-[33%]">
+        <div className="flex flex-row sm:flex-col justify-center items-center sm:w-[33%] w-[50%]">
           <div className="flex flex-col items-end text-white-cream">
             <h3 className="font-tan text-xs sm:text-sm md:text-xl lg:text-2xl">
               Antonella Strangio
@@ -29,8 +29,8 @@ export default function Footer() {
               <Image
                 src="/resources/Images/instagram_icon.png"
                 alt="Page logo"
-                width={35}
-                height={35}
+                width={25}
+                height={25}
                 className="w-6 h-6 sm:w-10 sm:h-10"
                 priority
               />
