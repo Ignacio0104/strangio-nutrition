@@ -32,6 +32,10 @@ export default {
       },
       fontFamily: {
         tan: ["TAN Meringue", "sans-serif"],
+        thasadithBold: ["Thasadith-bold", "sans-serif"],
+        thasadithBoldItalic: ["Thasadith-bold-italic", "sans-serif"],
+        thasadithItalic: ["Thasadith-italic", "sans-serif"],
+        thasadith: ["Thasadith", "sans-serif"],
       },
     },
   },
