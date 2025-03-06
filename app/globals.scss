@@ -6,7 +6,7 @@
   --background: #ffffff;
   --foreground: #171717;
   --white-cream: #fef5d4;
-  --beige: #4b6f64;
+  --beige: #bda194;
   --dark-green: #4b6f64;
   --pink: #c06194;
   --white-cream-rgb: rgb(254, 245, 212);
@@ -32,6 +32,34 @@ body {
 @font-face {
   font-family: "TAN Meringue";
   src: url("/resources/Fonts/TAN%20MERINGUE.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Thasadith-bold";
+  src: url("/resources/Fonts/Thasadith-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Thasadith-bold-italic";
+  src: url("/resources/Fonts/Thasadith-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Thasadith-italic";
+  src: url("/resources/Fonts/Thasadith-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Thasadith";
+  src: url("/resources/Fonts/Thasadith-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
