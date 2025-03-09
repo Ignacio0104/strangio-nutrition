@@ -16,7 +16,7 @@ export default function HeroSection() {
           alt="Fondo"
           width={500}
           height={500}
-          className="absolute drop-shadow-lg top-[-10vh] left-[15vh] sm:top-[-20vh] sm:left-[70vh] z-[-1]"
+          className="absolute drop-shadow-lg top-[-10vh] left-[30vw] sm:top-[-20vh] sm:left-[50vw] z-[-1]"
           quality={100}
           priority
         />
@@ -25,7 +25,7 @@ export default function HeroSection() {
           alt="Fondo"
           width={500}
           height={500}
-          className="absolute drop-shadow-lg top-[30vh] right-[25vh] sm:top-[30vh] sm:right-[70vh] z-[-1]"
+          className="absolute drop-shadow-lg top-[30vh] right-[50vw] sm:top-[30vh] sm:right-[60vw] z-[-1]"
           quality={100}
           priority
         />
