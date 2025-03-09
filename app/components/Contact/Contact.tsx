@@ -1,5 +1,4 @@
 import React from "react";
-import WhatsAppIcon from "../WhatsappIcon/WhatsAppIcon";
 import Footer from "../Footer/Footer";
 import Image from "next/image";
 import { Button } from "@mui/material";
@@ -53,18 +52,21 @@ export default function Contact() {
           priority
           className="rotate-90 py-8 ml-4"
         />
-        <Button
-          sx={{
-            backgroundColor: "var(--white-cream)",
-            color: "var(--dark-green)",
-          }}
-          variant="contained"
+        <a
+          href="https://wa.me/5491161058110?text=Hola%2C+quiero+m%C3%A1s+informaci%C3%B3n"
+          target="_blank"
         >
-          TURNOS
-        </Button>
+          <Button
+            sx={{
+              backgroundColor: "var(--white-cream)",
+              color: "var(--dark-green)",
+            }}
+            variant="contained"
+          >
+            TURNOS
+          </Button>
+        </a>
       </div>
-
-      <WhatsAppIcon />
       <Footer />
     </section>
   );

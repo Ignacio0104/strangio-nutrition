@@ -64,6 +64,25 @@ body {
   font-style: normal;
 }
 
+@font-face {
+  font-family: "coralThin";
+  src: url("/resources/Fonts/TT-Corals-Trial-Thin.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "coralLight";
+  src: url("/resources/Fonts/TT-Corals-Trial-Light.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "coralRegular";
+  src: url("/resources/Fonts/TT-Corals-Trial-Regular.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 html {
   scroll-behavior: smooth;
 }

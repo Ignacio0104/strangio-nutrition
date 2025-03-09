@@ -3,7 +3,7 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <div className="w-full absolute h-40 bottom-0 bg-dark-green text-white z-50">
+    <div className="w-full absolute sm:h-40 h-[6rem] bottom-0 bg-dark-green text-white z-50">
       <div className="flex items-center justify-between h-[100%] px-4 sm:px-6 gap-0 lg:gap-20 md:gap-10">
         <div className="w-[10%] sm:w-[20%] lg:w-[33%]">
           <Image
@@ -25,7 +25,7 @@ export default function Footer() {
 
         <div className="w-[33%] h-[20%]">
           <div className="flex flex-row justify-between m-auto">
-            <a href="" className="">
+            <a href="https://www.instagram.com/antostrangio.nutricion/">
               <Image
                 src="/resources/Images/instagram_icon.png"
                 alt="Page logo"
@@ -35,7 +35,7 @@ export default function Footer() {
                 priority
               />
             </a>
-            <a href="">
+            <a href="https://www.linkedin.com/in/antonellastrangio/">
               <Image
                 src="/resources/Images/linkedin_icon.png"
                 alt="Page logo"
@@ -45,7 +45,7 @@ export default function Footer() {
                 priority
               />
             </a>
-            <a href="">
+            <a href="https://wa.me/5491161058110?text=Hola%2C+quiero+m%C3%A1s+informaci%C3%B3n">
               <Image
                 src="/resources/Images/whatsapp_icon.png"
                 alt="Page logo"
@@ -55,7 +55,7 @@ export default function Footer() {
                 priority
               />
             </a>
-            <a href="">
+            <a href="https://www.tiktok.com/@anto.strangio.nut">
               <Image
                 src="/resources/Images/tiktok_icon.png"
                 alt="Page logo"

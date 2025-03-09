@@ -28,8 +28,8 @@ export default function Header() {
 
   const toggleMenu = () => setShowMobileMenu((prevState) => !prevState);
   return (
-    <header className="sticky top-0 bg-white-cream shadow-md z-50 text-pink">
-      <div className="flex flex-row justify-between items-center h-16 px-4 w-full">
+    <header className="fixed w-full top-0 bg-white-cream shadow-md z-50 text-pink">
+      <div className="flex flex-row font-coralRegular justify-between items-center h-16 px-4 w-full">
         <div
           onClick={scrollToTop}
           className="flex flex-row cursor-pointer items-center"
@@ -51,7 +51,7 @@ export default function Header() {
         </div>
 
         <nav className="hidden sm:flex">
-          <ul className="flex space-x-4">
+          <ul className="flex space-x-4 text-[1.08rem]">
             <li>
               <Link className="hover:text-dark-green" href="/#acerca-de-mi">
                 Acerca de mí
