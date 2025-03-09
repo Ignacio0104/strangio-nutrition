@@ -25,7 +25,10 @@ export default function Footer() {
 
         <div className="w-[33%] h-[20%]">
           <div className="flex flex-row justify-between m-auto">
-            <a href="https://www.instagram.com/antostrangio.nutricion/">
+            <a
+              href="https://www.instagram.com/antostrangio.nutricion/"
+              target="_blank"
+            >
               <Image
                 src="/resources/Images/instagram_icon.png"
                 alt="Page logo"
@@ -35,7 +38,10 @@ export default function Footer() {
                 priority
               />
             </a>
-            <a href="https://www.linkedin.com/in/antonellastrangio/">
+            <a
+              href="https://www.linkedin.com/in/antonellastrangio/"
+              target="_blank"
+            >
               <Image
                 src="/resources/Images/linkedin_icon.png"
                 alt="Page logo"
@@ -45,7 +51,10 @@ export default function Footer() {
                 priority
               />
             </a>
-            <a href="https://wa.me/5491161058110?text=Hola%2C+quiero+m%C3%A1s+informaci%C3%B3n">
+            <a
+              target="_blank"
+              href="https://wa.me/5491161058110?text=Hola%2C+quiero+m%C3%A1s+informaci%C3%B3n"
+            >
               <Image
                 src="/resources/Images/whatsapp_icon.png"
                 alt="Page logo"
@@ -55,7 +64,7 @@ export default function Footer() {
                 priority
               />
             </a>
-            <a href="https://www.tiktok.com/@anto.strangio.nut">
+            <a href="https://www.tiktok.com/@anto.strangio.nut" target="_blank">
               <Image
                 src="/resources/Images/tiktok_icon.png"
                 alt="Page logo"

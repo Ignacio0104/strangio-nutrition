@@ -41,7 +41,7 @@ export default function Contact() {
         <h3 className="font-tan lg:text-4xl md:text-3xl sm:text-2xl text-xl">
           No lo pospongas mas! Que tu cambio empiece hoy
         </h3>
-        <p className="text-lg text-xl pt-10 font-thasadithBold">
+        <p className="text-lg sm:text-2xl pt-10 font-coralRegular">
           Sacá tu turno!
         </p>
         <Image
@@ -62,6 +62,7 @@ export default function Contact() {
               color: "var(--dark-green)",
             }}
             variant="contained"
+            className="font-coralRegular text-sm sm:text-lg"
           >
             TURNOS
           </Button>

@@ -11,13 +11,13 @@ export default function Services() {
         <h3 className="font-tan text-l sm:text-xl lg:text-2xl">
           ¿Como trabajamos?
         </h3>
-        <p className="text-sm sm:text-l lg:text-xl">
+        <p className="text-sm sm:text-l lg:text-xl font-coralRegular">
           Consultas presenciales - online (meet-videollamada)
         </p>
         <h3 className="font-tan text-l sm:text-xl lg:tex-2xl">
           ¿Qué esperar de la consulta?
         </h3>
-        <ul className="list-disc pl-6">
+        <ul className="list-disc pl-6 font-coralRegular">
           <li className="text-sm sm:text-l lg:text-xl">Cuestionario inicial</li>
           <li className="text-sm sm:text-l lg:text-xl">
             Medición de composición corporal a través bioimpendancia
@@ -32,7 +32,7 @@ export default function Services() {
         <h3 className="font-tan text-l sm:text-xl lg:tex-2xl">
           ¿En qué nos especializamos?
         </h3>
-        <p className="text-sm sm:text-l lg:text-xl">
+        <p className="text-sm sm:text-l lg:text-xl font-coralRegular">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda
           voluptatem saepe esse
         </p>
