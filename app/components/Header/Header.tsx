@@ -94,7 +94,7 @@ export default function Header() {
               <X size={28} />
             </button>
 
-            <ul className="space-y-6 text-xl">
+            <ul className="space-y-6 text-[1.5rem] font-coralRegular">
               <li>
                 <Link
                   onClick={toggleMenu}
