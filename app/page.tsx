@@ -6,7 +6,7 @@ import Services from "./components/Services/Services";
 
 export default function Home() {
   return (
-    <main className="bg-slate-300">
+    <main>
       <FloaterSection>
         <HeroSection />
         <AboutSection />
