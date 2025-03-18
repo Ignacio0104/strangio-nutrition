@@ -9,6 +9,12 @@ import Link from "next/link";
 export default function Header() {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
 
+  const scrollToBottom = () => {
+    setTimeout(() => {
+      window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
+    }, 300);
+  };
+
   useEffect(() => {
     if (showMobileMenu) {
       document.body.classList.add("overflow-hidden");
@@ -62,8 +68,8 @@ export default function Header() {
                 Servicios
               </Link>
             </li>
-            <li>
-              <Link className="hover:text-dark-green" href="#contact">
+            <li onClick={scrollToBottom}>
+              <Link className="hover:text-dark-green" href="/#contact">
                 Contacto
               </Link>
             </li>
@@ -113,11 +119,11 @@ export default function Header() {
                   Servicios
                 </Link>
               </li>
-              <li>
+              <li onClick={scrollToBottom}>
                 <Link
                   onClick={toggleMenu}
                   className="hover:text-pink"
-                  href="#contact"
+                  href="/#contact"
                 >
                   Contacto
                 </Link>

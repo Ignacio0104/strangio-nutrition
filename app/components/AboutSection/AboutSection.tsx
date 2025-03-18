@@ -8,7 +8,10 @@ export default function AboutSection() {
       id="acerca-de-mi"
       className="h-screen relative bg-white-cream sm:pt-20 sm:pt-0 pt-10 flex justify-center sm:justify-normal"
     >
-      <div className="flex w-full gap-1 sm:gap-6 flex-col sm:px-6 sm:flex-row items-center z-10">
+      <div
+        id="acerca-de-mi"
+        className="flex w-full gap-1 sm:gap-6 flex-col sm:px-6 sm:flex-row items-center z-10"
+      >
         <div className="flex-1 lg:flex-[2] rounded-b-lg image-container w-full flex lg:w-[80%] justify-center items-center">
           <Image
             src="/resources/Images/ANTO-PIC-sin-fondo.png"
