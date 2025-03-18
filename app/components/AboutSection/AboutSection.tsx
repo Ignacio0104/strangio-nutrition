@@ -13,7 +13,7 @@ export default function AboutSection() {
           <Image
             src="/resources/Images/ANTO-PIC-sin-fondo.png"
             alt="Foto Antonella"
-            width={300}
+            width={250}
             height={250}
             className="lg:hidden block"
           />
