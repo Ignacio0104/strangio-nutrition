@@ -4,7 +4,7 @@ export default function AboutSection() {
   return (
     <section
       id="acerca-de-mi"
-      className="min-h-screen bg-[#F5F0E0] flex flex-col lg:flex-row"
+      className="min-h-screen pt-10 md:pt-0 bg-[#F5F0E0] flex flex-col lg:flex-row"
     >
       {/* ── Image column ── */}
       <div className="relative flex-shrink-0 bg-[#E8E0C8] overflow-hidden self-stretch order-last lg:order-first">
@@ -18,7 +18,7 @@ export default function AboutSection() {
         />
 
         {/* Decorative pill */}
-        <div className="absolute top-4 md:top-16 left-8 bg-[#3D6B5A] text-[#F5F0E0] rounded-xl px-4 py-3">
+        <div className="absolute top-4 md:top-20 left-6 bg-[#3D6B5A] text-[#F5F0E0] rounded-xl px-4 py-3">
           <p className="font-sans text-[0.58rem] font-semibold tracking-[0.15em] uppercase opacity-70 mb-0.5">
             Especialidad
           </p>

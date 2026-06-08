@@ -33,7 +33,7 @@ export default function Services() {
   return (
     <section
       id="servicios"
-      className="relative h-screen bg-[#3D6B5A] overflow-hidden flex flex-col justify-between px-6 pt-10 pb-8 sm:px-12 sm:py-24 lg:px-20 lg:justify-center"
+      className="relative pt-24 md:pt-0 h-screen bg-[#3D6B5A] overflow-hidden flex flex-col justify-between px-6 pt-10 pb-8 sm:px-12 sm:py-24 lg:px-20 lg:justify-center"
     >
       {/* ── Header ── */}
       <div className="relative z-10 sm:mb-16 flex flex-col lg:flex-row lg:items-end lg:justify-between gap-3 sm:gap-6">
@@ -56,11 +56,11 @@ export default function Services() {
       </div>
 
       {/* ── Steps grid ── */}
-      <div className="relative z-10 flex-1 sm:flex-none m-auto grid grid-cols-1 w-[80%] gap-4 lg:gap-2 lg:w-full lg:grid-cols-4 gap-px bg-transparent overflow-hidden my-4 sm:my-0">
+      <div className="relative z-10 flex-1 sm:flex-none m-auto grid grid-cols-2 w-full md:w-[80%] gap-4 lg:gap-2 lg:w-full lg:grid-cols-4 gap-px bg-transparent overflow-hidden my-4 sm:my-0">
         {steps.map(({ number, title, description, icon }) => (
           <div
             key={number}
-            className="group rounded-2xl bg-[#2A4A3E]/70 hover:bg-[#2A4A3E] transition-colors duration-300 p-4 sm:p-8 flex flex-col gap-2 sm:gap-4"
+            className="group rounded-2xl bg-[#2A4A3E]/70 hover:bg-[#2A4A3E] h-[80%] mt-10 md:h-full md:mt-0 transition-colors duration-300 p-4 sm:p-8 flex flex-col gap-2 sm:gap-4"
           >
             {/* Icon + number row */}
             <div className="flex items-start justify-between">

@@ -2,7 +2,10 @@ import Image from "next/image";
 
 export default function HeroSection() {
   return (
-    <section className="relative min-h-screen bg-[#C4588A] overflow-hidden flex flex-col lg:flex-row">
+    <section
+      id="principal"
+      className="relative min-h-screen bg-[#C4588A] overflow-hidden flex flex-col lg:flex-row"
+    >
       <Image
         src="/resources/Images/avocado.png"
         alt="Fondo"

@@ -3,80 +3,97 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <div className="w-full absolute sm:h-40 h-[6rem] bottom-0 bg-dark-green text-white z-50">
-      <div className="flex items-center justify-between h-[100%] px-4 sm:px-6 gap-0 lg:gap-20 md:gap-10">
-        <div className="w-[10%] sm:w-[20%] lg:w-[33%]">
+    /* CHANGED: Removed 'absolute bottom-0' and replaced with a semantic HTML footer tag */
+    <footer className="w-full bg-[#1A3323] text-white z-50 py-6 sm:py-8 mt-auto">
+      <div className="max-w-6xl mx-auto flex items-center justify-between px-6 sm:px-12 gap-4">
+        {/* Brand Logo Container */}
+        <div className="w-[25%] flex justify-start">
           <Image
             src="/resources/Images/anto-logo-white.png"
-            alt="Page logo"
-            width={80}
-            height={80}
+            alt="Antonella Strangio Logo"
+            width={60}
+            height={60}
+            className="w-12 h-12 sm:w-[60px] sm:h-[60px] object-contain"
             priority
           />
         </div>
-        <div className="flex flex-row sm:flex-col justify-center items-center sm:w-[33%] w-[50%]">
-          <div className="flex flex-col items-end text-white-cream">
-            <h3 className="font-tan text-xs sm:text-sm md:text-xl lg:text-2xl">
-              Antonella Strangio
-            </h3>
-            <h4 className="sm:text-sm text-xs items-end">Nutrición</h4>
-          </div>
+
+        {/* Professional Title Branding */}
+        <div className="w-[50%] flex flex-col items-center justify-center text-center">
+          <h3 className="font-tan text-sm sm:text-lg md:text-xl lg:text-2xl tracking-wide">
+            Antonella Strangio
+          </h3>
+          <h4 className="text-xs sm:text-sm uppercase tracking-[0.15em] opacity-80 mt-1">
+            Nutrición
+          </h4>
         </div>
 
-        <div className="w-[33%] h-[20%]">
-          <div className="flex flex-row justify-between m-auto">
+        {/* Social Icons Navigation Grid */}
+        <div className="w-[25%] flex justify-end">
+          <div className="grid grid-cols-2 md:flex items-center justify-end gap-3 sm:gap-5">
             <a
               href="https://www.instagram.com/antostrangio.nutricion/"
               target="_blank"
+              rel="noopener noreferrer"
+              className="hover:scale-105 transition-transform"
             >
               <Image
                 src="/resources/Images/instagram_icon.png"
-                alt="Page logo"
-                width={25}
-                height={25}
-                className="w-6 h-6 sm:w-10 sm:h-10"
+                alt="Instagram"
+                width={24}
+                height={24}
+                className="w-5 h-5 sm:w-6 sm:h-6  brightness-200"
                 priority
               />
             </a>
             <a
               href="https://www.linkedin.com/in/antonellastrangio/"
               target="_blank"
+              rel="noopener noreferrer"
+              className="hover:scale-105 transition-transform"
             >
               <Image
                 src="/resources/Images/linkedin_icon.png"
-                alt="Page logo"
-                width={35}
-                height={35}
-                className="w-6 h-6 sm:w-10 sm:h-10"
+                alt="LinkedIn"
+                width={24}
+                height={24}
+                className="w-5 h-5 sm:w-6 sm:h-6  brightness-200"
                 priority
               />
             </a>
             <a
-              target="_blank"
               href="https://wa.me/5491161058110?text=Hola%2C+quiero+m%C3%A1s+informaci%C3%B3n"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:scale-105 transition-transform"
             >
               <Image
                 src="/resources/Images/whatsapp_icon.png"
-                alt="Page logo"
-                width={35}
-                height={35}
-                className="w-6 h-6 sm:w-10 sm:h-10"
+                alt="WhatsApp"
+                width={24}
+                height={24}
+                className="w-5 h-5 sm:w-6 sm:h-6  brightness-200"
                 priority
               />
             </a>
-            <a href="https://www.tiktok.com/@anto.strangio.nut" target="_blank">
+            <a
+              href="https://www.tiktok.com/@anto.strangio.nut"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:scale-105 transition-transform"
+            >
               <Image
                 src="/resources/Images/tiktok_icon.png"
-                alt="Page logo"
-                width={35}
-                height={35}
-                className="w-6 h-6 sm:w-10 sm:h-10"
+                alt="TikTok"
+                width={24}
+                height={24}
+                className="w-5 h-5 sm:w-6 sm:h-6  brightness-200"
                 priority
               />
             </a>
           </div>
         </div>
       </div>
-    </div>
+    </footer>
   );
 }

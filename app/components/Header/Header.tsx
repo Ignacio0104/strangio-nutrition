@@ -6,9 +6,9 @@ import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 
 const navLinks = [
-  { label: "Acerca de mí", href: "/sobre-mi" },
-  { label: "Servicios", href: "/servicios" },
-  { label: "Contacto", href: "/contacto" },
+  { label: "Acerca de mí", href: "#acerca-de-mi" },
+  { label: "Servicios", href: "#servicios" },
+  { label: "Contacto", href: "#contacto" },
 ];
 
 export default function Header() {
@@ -29,7 +29,7 @@ export default function Header() {
       <header className="fixed top-0 left-0 right-0 z-50 bg-[#F5F0E0]/95 backdrop-blur-sm border-b border-[#E8A0C0]/25">
         <div className="flex items-center justify-between h-16 px-6 sm:px-10 lg:px-16">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-3">
+          <Link href="#principal" className="flex items-center gap-3">
             <Image
               src="/resources/Images/anto-logo.png"
               alt="Logo Antonella Strangio"
@@ -57,7 +57,7 @@ export default function Header() {
               ))}
               <li>
                 <Link
-                  href="/contacto"
+                  href="#contacto"
                   className="font-sans text-[0.72rem] font-semibold tracking-[0.12em] uppercase bg-[#C4588A] text-[#F5F0E0] rounded-full px-5 py-2 hover:bg-[#8B2E5E] transition-colors"
                 >
                   Contacto
