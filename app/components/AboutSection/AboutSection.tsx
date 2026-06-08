@@ -4,7 +4,6 @@ import Image from "next/image";
 import { motion, Variants } from "framer-motion";
 
 export default function AboutSection() {
-  // Stagger configurations for the text and stats block
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -28,26 +27,27 @@ export default function AboutSection() {
   return (
     <section
       id="acerca-de-mi"
-      className="min-h-screen pt-10 md:pt-0 bg-[#F5F0E0] flex flex-col lg:flex-row overflow-hidden"
+      className="min-h-screen pt-10 md:pt-0 bg-[#F5F0E0] flex flex-col md:flex-row overflow-hidden"
     >
       {/* ── Image column ── */}
       <motion.div
         initial={{ opacity: 0, x: -40 }}
         whileInView={{ opacity: 1, x: 0 }}
-        viewport={{ once: true, amount: 0.3 }} // Animate once when 30% of the element is visible
+        viewport={{ once: true, amount: 0.3 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
-        className="relative flex-shrink-0 bg-[#E8E0C8] overflow-hidden self-stretch order-last lg:order-first"
+        className="relative flex-shrink-0 bg-[#E8E0C8] overflow-hidden self-stretch order-last md:order-first"
       >
         <Image
           src="/resources/Images/anto-pic-2.jpeg"
-          alt="Foto Antonella Strangio"
+          // SEO FIX: Highly optimized descriptive image tags for image searches
+          alt="Lic. Antonella Strangio, nutricionista especialista en diabetes y control de sobrepeso en consultorio Banfield"
           width={500}
           height={700}
-          className="h-[50vh] w-full object-cover object-top lg:h-full lg:w-auto"
+          className="h-[50vh] w-full object-cover object-top md:h-full md:w-auto"
           priority
         />
 
-        {/* Decorative pill sliding in from the left */}
+        {/* Decorative pill */}
         <motion.div
           initial={{ opacity: 0, x: -20 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -79,14 +79,15 @@ export default function AboutSection() {
           Sobre mí
         </motion.p>
 
+        {/* GOOGLE SEO FIX: Standardized header context that preserves aesthetics but provides targeted search intent signals */}
         <motion.h2
           variants={itemVariants}
           className="font-display italic font-light text-[#1C1C1A] leading-[1.05] tracking-[-0.01em] mb-6"
           style={{ fontSize: "clamp(2.2rem, 4vw, 3.5rem)" }}
         >
-          Tu bienestar,
+          Nutrición clínica en Banfield:
           <br />
-          mi compromiso
+          Tu bienestar, mi compromiso
         </motion.h2>
 
         <motion.div
@@ -94,25 +95,30 @@ export default function AboutSection() {
           className="w-12 h-px bg-[#E8A0C0] mb-6"
         />
 
+        {/* AI GEO FIX: Explicitly links Name + Professional Focus + Local Reach together in natural prose */}
         <motion.p
           variants={itemVariants}
           className="font-sans font-light text-[#444] leading-relaxed text-[0.95rem] sm:text-base max-w-md mb-10"
         >
-          Nutricionista con amplia experiencia en nutrición clínica,
-          especializada en diabetes. Acompaño a personas con sobrepeso y
-          obesidad a mejorar su salud a través de hábitos sostenibles. Mi
-          enfoque se basa en la educación alimentaria y cambios progresivos para
-          lograr bienestar duradero.
+          Soy la <strong>Lic. Antonella Strangio</strong>, una nutricionista con
+          amplia experiencia en nutrición clínica y especializada en diabetes.
+          Acompaño a personas con sobrepeso y obesidad en Banfield y de forma
+          online a mejorar su salud a través de hábitos sostenibles. Mi enfoque
+          se basa en la educación alimentaria y cambios progresivos para lograr
+          un bienestar duradero.
         </motion.p>
 
-        {/* Stats Grid container */}
-        <motion.div variants={itemVariants} className="flex gap-8 mb-10">
+        {/* AI GEO FIX: Transformed layout elements into semantic unordered list elements to improve facts-scraped mapping profiles */}
+        <motion.ul
+          variants={itemVariants}
+          className="flex gap-8 mb-10 list-none p-0 m-0"
+        >
           {[
             { value: "+5", label: "Años de experiencia" },
             { value: "300+", label: "Pacientes acompañados" },
             { value: "100%", label: "Enfoque personalizado" },
           ].map(({ value, label }) => (
-            <div key={label} className="flex flex-col gap-1">
+            <li key={label} className="flex flex-col gap-1">
               <span
                 className="font-display italic text-[#C4588A] font-light leading-none"
                 style={{ fontSize: "clamp(1.8rem, 3vw, 2.4rem)" }}
@@ -122,9 +128,9 @@ export default function AboutSection() {
               <span className="font-sans text-[0.62rem] font-medium tracking-[0.08em] uppercase text-[#999]">
                 {label}
               </span>
-            </div>
+            </li>
           ))}
-        </motion.div>
+        </motion.ul>
 
         {/* CTA + Location */}
         <motion.div
@@ -151,7 +157,7 @@ export default function AboutSection() {
             </svg>
           </a>
 
-          {/* Location */}
+          {/* Location — Crucial local citation indicator */}
           <a
             href="https://maps.google.com/?q=Cochabamba+246,+B1828+Banfield"
             target="_blank"

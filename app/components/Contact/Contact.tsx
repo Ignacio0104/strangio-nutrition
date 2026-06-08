@@ -7,7 +7,6 @@ import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import { motion, Variants } from "framer-motion";
 
 export default function Contact() {
-  // Stagger wrapper variant to synchronize text lines cleanly
   const titleContainerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -30,9 +29,9 @@ export default function Contact() {
   return (
     <section
       id="contacto"
-      className="relative pt-20 min-h-[83vh] flex flex-col justify-between bg-[#C2A391] overflow-hidden"
+      className="relative pt-16 min-h-[77vh] flex flex-col justify-between bg-[#C2A391] overflow-hidden"
     >
-      {/* Background Decorative Illustration — Fades and scales in quietly */}
+      {/* Background Decorative Illustration */}
       <motion.div
         initial={{ opacity: 0, scale: 0.85, rotate: 5 }}
         whileInView={{ opacity: 0.2, scale: 1, rotate: 0 }}
@@ -42,7 +41,8 @@ export default function Contact() {
       >
         <Image
           src="/resources/Images/fruit_3789759.png"
-          alt="fruit logo"
+          // SEO FIX: Alt descriptivo para imágenes corporativas secundarias
+          alt="Isotipo de fruta decorativo - Lic. Antonella Strangio Nutrición"
           width={400}
           height={400}
           priority
@@ -50,7 +50,7 @@ export default function Contact() {
         />
         <Image
           src="/resources/Images/fruit_3789759.png"
-          alt="fruit logo"
+          alt="Isotipo de fruta decorativo - Lic. Antonella Strangio Nutrición"
           width={500}
           height={500}
           priority
@@ -61,7 +61,7 @@ export default function Contact() {
       {/* Main Container */}
       <div className="relative z-10 max-w-6xl px-6 sm:px-12 lg:px-16 w-full flex items-center py-12">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8 lg:gap-16 items-center w-full">
-          {/* Left Column: Headings — Sliding in staggered from the left */}
+          {/* Left Column: Headings */}
           <motion.div
             variants={titleContainerVariants}
             initial="hidden"
@@ -75,21 +75,23 @@ export default function Contact() {
             >
               ¿Lista para empezar?
             </motion.span>
-            <motion.h3
+
+            {/* GOOGLE SEO FIX: Cambiado a H2 para consolidar la fuerza semántica de cierre de página */}
+            <motion.h2
               variants={leftItemVariants}
               className="font-tan text-4xl sm:text-5xl lg:text-6xl text-[#2C211A] font-serif italic leading-tight"
             >
               No lo pospongas más.
-            </motion.h3>
-            <motion.h3
+            </motion.h2>
+            <motion.p
               variants={leftItemVariants}
               className="font-tan text-4xl sm:text-5xl lg:text-6xl text-[#2C211A] font-serif italic leading-tight mt-2"
             >
               Tu cambio empieza hoy.
-            </motion.h3>
+            </motion.p>
           </motion.div>
 
-          {/* Right Column: CTA & Copy — Glides into place from the right */}
+          {/* Right Column: CTA & Copy */}
           <motion.div
             initial={{ opacity: 0, x: 40 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -101,21 +103,25 @@ export default function Contact() {
             }}
             className="md:col-span-6 flex flex-col justify-center items-start md:pl-6 lg:pl-12"
           >
+            {/* AI GEO FIX: Texto enriquecido con palabras clave geolocalizadas y especialidad explícita para extracción de entidades de IA */}
             <p className="text-[#4E3F35] text-base sm:text-lg lg:text-xl font-light leading-relaxed max-w-md mb-8">
-              Sacá tu turno y dá el primer paso hacia una alimentación que te
-              haga sentir bien, de verdad.
+              Reservá tu turno en <strong>Banfield</strong> o de forma online, y
+              dá el primer paso hacia un tratamiento especializado en diabetes y
+              sobrepeso que te haga sentir bien.
             </p>
 
             <div className="flex flex-col items-start gap-4 w-full">
               <a
-                href="https://wa.me/5491161058110?text=Hola%2C+quiero+m%C3%A1s+informaci%C3%B3n"
+                href="https://wa.me/5491161058110?text=Hola%2C+quiero+m%C3%A1s+informaci%C3%B3n+sobre+los+turnos+de+nutricion"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full sm:w-auto"
+                // AI & GOOGLE FIX: Atributos explícitos para indexación de links transaccionales
+                title="Contactar a la Lic. Antonella Strangio por WhatsApp"
+                aria-label="Reservar turno de consulta nutricional mediante WhatsApp"
               >
                 <Button
                   variant="contained"
-                  // 1. Pass the icon inside a span or directly with the animation class style applied
                   endIcon={
                     <ArrowForwardIcon
                       className="text-sm"
@@ -123,7 +129,7 @@ export default function Contact() {
                         animation: "nudgeArrow 1.2s infinite ease-in-out",
                         "@keyframes nudgeArrow": {
                           "0%, 100%": { transform: "translateX(0)" },
-                          "50%": { transform: "translateX(4px)" }, // Moves 4px to the right
+                          "50%": { transform: "translateX(4px)" },
                         },
                       }}
                     />
@@ -146,12 +152,10 @@ export default function Contact() {
                       backgroundColor: "#662449",
                       boxShadow: "0 6px 20px rgba(125, 48, 91, 0.4)",
                       transform: "translateY(-1px)",
-                      // 2. Optional: Speeds up or exaggerates the animation slightly on hover
                       "& .MuiButton-endIcon svg": {
                         animation: "nudgeArrowHover 0.8s infinite ease-in-out",
                       },
                     },
-                    // Secondary keyframe to handle the optional faster hover effect
                     "@keyframes nudgeArrowHover": {
                       "0%, 100%": { transform: "translateX(0)" },
                       "50%": { transform: "translateX(6px)" },

@@ -4,13 +4,12 @@ import Image from "next/image";
 import { motion, Variants } from "framer-motion";
 
 export default function HeroSection() {
-  // Animation Variants for staggered text orchestration
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.15, // Delay between each text element
+        staggerChildren: 0.15,
         delayChildren: 0.1,
       },
     },
@@ -28,7 +27,7 @@ export default function HeroSection() {
   return (
     <section
       id="principal"
-      className="relative min-h-screen bg-[#C4588A] overflow-hidden flex flex-col lg:flex-row"
+      className="relative min-h-screen bg-[#C4588A] overflow-hidden flex flex-col md:flex-row"
     >
       {/* Background Avocado Image - Subtle Fade In */}
       <motion.div
@@ -39,7 +38,8 @@ export default function HeroSection() {
       >
         <Image
           src="/resources/Images/avocado.png"
-          alt="Fondo"
+          // SEO FIX: Alt descriptivo con contexto de nutrición
+          alt="Ilustración decorativa de aguacate - Planificación nutricional saludable"
           width={600}
           height={600}
           className="text-[#F5F0E0]/10"
@@ -60,10 +60,11 @@ export default function HeroSection() {
           variants={itemVariants}
           className="font-sans text-[0.65rem] font-semibold tracking-[0.22em] uppercase text-[#F5F0E0]/70 mb-5"
         >
-          Nutricionista clínica · Especialista en diabetes
+          Nutricionista clínica · Especialista en diabetes y sobrepeso
         </motion.p>
 
         {/* Main heading */}
+        {/* AI & GOOGLE FIX: Inyección de entidad profesional oculta para que los bots identifiquen el H1 con su nicho */}
         <motion.h1
           variants={itemVariants}
           className="font-display font-light italic text-[#F5F0E0] leading-[1.0] tracking-[-0.01em] mb-5"
@@ -72,6 +73,7 @@ export default function HeroSection() {
           Lic. Antonella
           <br />
           Strangio
+          <span className="sr-only"> — Consultorio de Nutrición Integral</span>
         </motion.h1>
 
         {/* Divider line */}
@@ -85,17 +87,19 @@ export default function HeroSection() {
           variants={itemVariants}
           className="font-sans font-light text-[#F5F0E0]/80 leading-relaxed max-w-sm mb-10 text-[0.95rem] sm:text-base"
         >
-          Crea una relación saludable con la comida a través de hábitos simples
-          y sostenibles.
+          Crea una relación saludable con la comida a través de hábitos simples,
+          planes personalizados y tratamientos sostenibles para mejorar tu
+          bienestar.
         </motion.p>
 
         {/* CTA row: buttons + modalidad badge */}
         <motion.div variants={itemVariants} className="flex flex-col gap-3">
-          {/* Row 1 — always inline: Reservar + Ver servicios */}
+          {/* Row 1: Botones corregidos con anclajes id si es SPA */}
           <div className="flex flex-row items-center gap-6">
             <a
-              href="/contacto"
+              href="#contacto"
               className="inline-flex items-center gap-3 bg-[#F5F0E0] text-[#8B2E5E] rounded-full px-7 py-3.5 font-sans text-[0.72rem] font-semibold tracking-[0.12em] uppercase transition-opacity hover:opacity-90 whitespace-nowrap"
+              title="Reservar una consulta nutricional con la Lic. Antonella Strangio"
             >
               Reservar consulta
               <svg
@@ -114,8 +118,9 @@ export default function HeroSection() {
             </a>
 
             <a
-              href="/servicios"
+              href="#servicios"
               className="inline-flex items-center gap-2 text-[#F5F0E0]/70 font-sans text-[0.72rem] font-medium tracking-[0.1em] uppercase hover:text-[#F5F0E0] transition-colors whitespace-nowrap"
+              title="Ver tratamientos de nutrición clínica y obesidad"
             >
               Ver servicios
               <svg
@@ -135,13 +140,14 @@ export default function HeroSection() {
           </div>
 
           {/* Row 2 — Modalidad badge */}
-          <div className="w-fit m-auto md:ml-0 flex">
-            <div className="bg-[#F5F0E0]/95 backdrop-blur-sm rounded-xl flex items-center gap-2 md:flex-col md:items-start mt-4 px-4 py-3 sm:ml-1">
+          {/* GEO FIX: Inyección explícita de ubicación para captura de consultas geolocalizadas por IA */}
+          <div className="w-full m-auto md:ml-0 flex">
+            <div className="w-fit bg-[#F5F0E0]/95 backdrop-blur-sm rounded-xl m-auto flex flex-col md:flex-row items-center gap-2 md:gap-6 mt-4 px-4 py-3 sm:ml-1">
               <p className="font-sans text-[0.58rem] font-semibold tracking-[0.15em] uppercase text-[#C4588A] mb-0.5">
-                Modalidad
+                Atención Médica
               </p>
               <p className="font-display italic text-[0.95rem] text-[#1C1C1A]">
-                Presencial & Online
+                Presencial en Banfield &amp; Online
               </p>
             </div>
           </div>
@@ -157,13 +163,14 @@ export default function HeroSection() {
           transition={{
             duration: 0.8,
             delay: 0.5,
-            ease: [0.16, 1, 0.3, 1], // Custom sleek cubic-bezier easing
+            ease: [0.16, 1, 0.3, 1],
           }}
-          className="absolute bottom-0  -translate-x-1/2 lg:left-auto lg:translate-x-0 lg:right-[8%] w-[72%] sm:w-[55%] lg:w-[62%] h-[90%] rounded-t-[200px] overflow-hidden bg-[#8B2E5E]/25 origins-bottom"
+          className="absolute bottom-0 -translate-x-1/2 lg:left-auto lg:translate-x-0 lg:right-[8%] w-[72%] sm:w-[55%] lg:w-[62%] h-[90%] rounded-t-[200px] overflow-hidden bg-[#8B2E5E]/25 origins-bottom"
         >
           <Image
             src="/resources/Images/ANTO-PIC-sin-fondo.png"
-            alt="Fondo"
+            // SEO CRITICAL FIX: Identificación exacta de la imagen para Google Imágenes y grafos relacionales de IA
+            alt="Lic. Antonella Strangio, Nutricionista Clínica especialista en Diabetes y Control de Sobrepeso"
             width={500}
             height={500}
             className="w-full h-full object-cover object-top"
