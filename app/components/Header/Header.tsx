@@ -122,7 +122,6 @@ export default function Header() {
                       animate={{ opacity: 1, x: 0 }}
                       transition={{ delay: 0.15 + i * 0.07, duration: 0.2 }}
                     >
-                      s
                       <Link
                         href={href}
                         onClick={close}
