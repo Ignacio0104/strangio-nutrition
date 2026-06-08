@@ -123,7 +123,7 @@ export default function Footer() {
           </p>
           <p className="tracking-wide">
             Consultorio en{" "}
-            <span className="text-white/70 font-normal">Banfield</span> &amp;
+            <span className="text-white/70 font-normal">Banfield </span> &amp;
             Atención Online.
           </p>
         </div>
