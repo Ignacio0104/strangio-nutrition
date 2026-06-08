@@ -85,17 +85,42 @@ export default function HeroSection() {
         {/* Subtitle */}
         <motion.p
           variants={itemVariants}
-          className="font-sans font-light text-[#F5F0E0]/80 leading-relaxed max-w-sm mb-10 text-[0.95rem] sm:text-base"
+          className="font-sans font-light text-[#F5F0E0]/80 leading-relaxed max-w-sm mb-0 md:mb-10 text-[0.95rem] sm:text-base"
         >
           Crea una relación saludable con la comida a través de hábitos simples,
           planes personalizados y tratamientos sostenibles para mejorar tu
           bienestar.
         </motion.p>
 
+        <div className="relative flex-1 flex items-end justify-center min-h-[340px] lg:min-h-0 block md:hidden mb-6">
+          {/* Arch background expands from bottom up */}
+          <motion.div
+            initial={{ opacity: 0, y: 60, scale: 0.95 }}
+            animate={{ opacity: 1, y: 0, scale: 1 }}
+            transition={{
+              duration: 0.8,
+              delay: 0.5,
+              ease: [0.16, 1, 0.3, 1],
+            }}
+            className="absolute bottom-0 -translate-x-1/2 lg:left-auto lg:translate-x-0 lg:right-[8%] w-[72%] sm:w-[55%] lg:w-[62%] h-[90%] rounded-t-[200px] overflow-hidden bg-[#8B2E5E]/25 origins-bottom"
+          >
+            <Image
+              src="/resources/Images/ANTO-PIC-sin-fondo.png"
+              // SEO CRITICAL FIX: Identificación exacta de la imagen para Google Imágenes y grafos relacionales de IA
+              alt="Lic. Antonella Strangio, Nutricionista Clínica especialista en Diabetes y Control de Sobrepeso"
+              width={500}
+              height={500}
+              className="w-full h-full object-cover object-top"
+              quality={100}
+              priority
+            />
+          </motion.div>
+        </div>
+
         {/* CTA row: buttons + modalidad badge */}
         <motion.div variants={itemVariants} className="flex flex-col gap-3">
           {/* Row 1: Botones corregidos con anclajes id si es SPA */}
-          <div className="flex flex-row items-center gap-6">
+          <div className="flex flex-col md:flex-row items-center gap-6">
             <a
               href="#contacto"
               className="inline-flex items-center gap-3 bg-[#F5F0E0] text-[#8B2E5E] rounded-full px-7 py-3.5 font-sans text-[0.72rem] font-semibold tracking-[0.12em] uppercase transition-opacity hover:opacity-90 whitespace-nowrap"
@@ -155,7 +180,7 @@ export default function HeroSection() {
       </motion.div>
 
       {/* ── RIGHT COLUMN — Photo arch ───────────────────── */}
-      <div className="relative flex-1 flex items-end justify-center min-h-[340px] lg:min-h-0">
+      <div className="relative flex-1 flex items-end justify-center min-h-[340px] lg:min-h-0 hidden md:block">
         {/* Arch background expands from bottom up */}
         <motion.div
           initial={{ opacity: 0, y: 60, scale: 0.95 }}
