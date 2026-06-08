@@ -190,7 +190,7 @@ export default function HeroSection() {
             delay: 0.5,
             ease: [0.16, 1, 0.3, 1],
           }}
-          className="absolute bottom-0 -translate-x-1/2 lg:left-auto lg:translate-x-0 lg:right-[8%] w-[72%] sm:w-[55%] lg:w-[62%] h-[90%] rounded-t-[200px] overflow-hidden bg-[#8B2E5E]/25 origins-bottom"
+          className="absolute bottom-0 -translate-x-1/2 lg:left-auto lg:translate-x-0 lg:right-[8%] w-[72%] sm:w-[55%] md:w-[90%] lg:w-[70%] h-[90%] rounded-t-[200px] overflow-hidden bg-[#8B2E5E]/25 origins-bottom"
         >
           <Image
             src="/resources/Images/ANTO-PIC-sin-fondo.png"

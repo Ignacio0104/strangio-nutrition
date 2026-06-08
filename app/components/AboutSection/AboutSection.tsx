@@ -27,7 +27,7 @@ export default function AboutSection() {
   return (
     <section
       id="acerca-de-mi"
-      className="min-h-screen pt-10 md:pt-0 bg-[#F5F0E0] flex flex-col md:flex-row overflow-hidden"
+      className="min-h-screen pt-8 md:pt-0 bg-[#F5F0E0] flex flex-col md:flex-row overflow-hidden"
     >
       {/* ── Image column ── */}
       <motion.div
@@ -53,12 +53,12 @@ export default function AboutSection() {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{ delay: 0.5, duration: 0.5 }}
-          className="absolute top-4 md:top-20 left-6 bg-[#3D6B5A] text-[#F5F0E0] rounded-xl px-4 py-3"
+          className="absolute top-2 md:top-20 left-6 bg-[#3D6B5A] text-[#F5F0E0] rounded-xl px-4 py-3"
         >
-          <p className="font-sans text-[0.58rem] font-semibold tracking-[0.15em] uppercase opacity-70 mb-0.5">
+          <p className="font-sans text-[0.60rem] font-semibold tracking-[0.15em] uppercase opacity-70 mb-0.5">
             Especialidad
           </p>
-          <p className="font-display italic text-[0.95rem] leading-none">
+          <p className="font-display italic text-[0.70rem] leading-none">
             Diabetes & Sobrepeso
           </p>
         </motion.div>
@@ -137,26 +137,6 @@ export default function AboutSection() {
           variants={itemVariants}
           className="flex flex-col justify-between sm:flex-row sm:items-center gap-4 sm:gap-6"
         >
-          <a
-            href="/contacto"
-            className="inline-flex items-center gap-3 bg-[#C4588A] text-[#F5F0E0] rounded-full px-5 py-3.5 font-sans text-[0.72rem] font-semibold tracking-[0.12em] uppercase hover:bg-[#8B2E5E] transition-colors w-fit"
-          >
-            Reservar consulta
-            <svg
-              width="14"
-              height="14"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2.5"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              aria-hidden="true"
-            >
-              <path d="M5 12h14M12 5l7 7-7 7" />
-            </svg>
-          </a>
-
           {/* Location — Crucial local citation indicator */}
           <a
             href="https://maps.google.com/?q=Cochabamba+246,+B1828+Banfield"
@@ -180,8 +160,7 @@ export default function AboutSection() {
               <circle cx="12" cy="10" r="3" />
             </svg>
             <span className="font-sans text-[0.9rem] font-light leading-tight">
-              Cochabamba 246.
-              <br className="hidden sm:block" /> Banfield, Buenos Aires
+              Cochabamba 246. Banfield, Buenos Aires
             </span>
           </a>
         </motion.div>
