@@ -9,7 +9,6 @@ export default function FloaterSection({
 }) {
   return (
     <div className="overflow-hidden">
-      <Header />
       {children}
       <WhatsAppIcon />
     </div>
