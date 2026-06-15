@@ -27,7 +27,7 @@ export default function AboutSection() {
   return (
     <section
       id="acerca-de-mi"
-      className="min-h-screen pt-8 md:pt-0 bg-[#F5F0E0] flex flex-col md:flex-row overflow-hidden"
+      className="min-h-screen pt-8 md:pt-0 bg-cream flex flex-col md:flex-row overflow-hidden"
     >
       {/* ── Image column ── */}
       <motion.div
@@ -53,7 +53,7 @@ export default function AboutSection() {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{ delay: 0.5, duration: 0.5 }}
-          className="absolute top-2 md:top-20 left-6 bg-[#3D6B5A] text-[#F5F0E0] rounded-xl px-4 py-3"
+          className="absolute top-2 md:top-20 left-6 bg-green text-light rounded-xl px-4 py-3"
         >
           <p className="font-sans text-[0.60rem] font-semibold tracking-[0.15em] uppercase opacity-70 mb-0.5">
             Especialidad
@@ -74,7 +74,7 @@ export default function AboutSection() {
       >
         <motion.p
           variants={itemVariants}
-          className="font-sans text-[0.65rem] font-semibold tracking-[0.22em] uppercase text-[#C4588A] mb-4"
+          className="font-sans text-[0.65rem] font-semibold tracking-[0.22em] uppercase text-dark-red mb-4"
         >
           Sobre mí
         </motion.p>

@@ -3,16 +3,11 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-  --white-cream: #fef5d4;
-  --beige: #bda194;
-  --dark-green: #4b6f64;
-  --pink: #c06194;
-  --white-cream-rgb: rgb(254, 245, 212);
-  --beige-rgb: rgb(75, 111, 100);
-  --dark-green-rgb: rgb(75, 111, 100);
-  --pink-rgb: rgb(192, 97, 148);
+  --dark-red: #641212;
+  --cream: #e2b4b4;
+  --green: #91b28f;
+  --dark: #332c2c;
+  --light: #f8f4f1;
 }
 
 //This works with browser user preferences, uncomment when needed
@@ -79,6 +74,29 @@ body {
 @font-face {
   font-family: "coralRegular";
   src: url("/resources/Fonts/TT-Corals-Trial-Regular.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "archivoBlack";
+  src: url("/resources/Fonts/Archivo_Black/ArchivoBlack-Regular.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "aristotelicaPro";
+  src: url("/resources/Fonts/aristotelica/AristotelicaSmallCaps-Regular.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ballpoint";
+  src: url("/resources/Fonts/ballpoint/Ballpoint.otf") format("openType");
   font-weight: normal;
   font-style: normal;
 }

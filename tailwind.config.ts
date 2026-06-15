@@ -9,12 +9,11 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
-        "white-cream": "var(--white-cream)",
-        beige: "var(--beige)",
-        "dark-green": "var(--dark-green)",
-        pink: "var(--pink)",
+        "dark-red": "var(--dark-red)",
+        cream: "var(--cream)",
+        green: "var(--green)",
+        dark: "var(--dark)",
+        light: "var(--light)",
       },
       keyframes: {
         fadeIn: {
@@ -39,6 +38,7 @@ export default {
         coralThin: ["coralThin", "sans-serif"],
         coralLight: ["coralLight", "sans-serif"],
         coralRegular: ["coralRegular", "sans-serif"],
+        archivoBlack: ["archivoBlack", "sans-serif"],
       },
     },
   },

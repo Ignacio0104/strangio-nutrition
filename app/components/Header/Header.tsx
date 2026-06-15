@@ -28,7 +28,7 @@ export default function Header() {
   return (
     <>
       {/* ── Bar ── */}
-      <header className="fixed top-0 left-0 right-0 z-50 bg-[#F5F0E0]/95 backdrop-blur-sm border-b border-[#E8A0C0]/25">
+      <header className="fixed top-0 left-0 right-0 z-50 bg-light backdrop-blur-sm border-b border-cream">
         <div className="flex items-center justify-between h-16 px-6 sm:px-10 lg:px-16">
           {/* Logo */}
           <Link
@@ -44,7 +44,7 @@ export default function Header() {
               height={32}
               priority
             />
-            <span className="font-display italic text-[#8B2E5E] text-lg leading-none select-none">
+            <span className="font-display italic text-dark-red text-lg leading-none select-none">
               Antonella Strangio{" "}
               <span className="sr-only">
                 — Nutricionista clínica especialista en diabetes
@@ -84,7 +84,7 @@ export default function Header() {
           {/* Hamburger */}
           <button
             onClick={() => setOpen(true)}
-            className="sm:hidden text-[#2A4A3E] p-1"
+            className="sm:hidden text-dark p-1"
             // SEO & ACCESSIBILITY FIX: Atributos dinámicos para avisar a los lectores y crawlers del estado del drawer
             aria-label="Abrir menú de navegación móvil"
             aria-expanded={open}
@@ -118,7 +118,7 @@ export default function Header() {
               animate={{ x: 0 }}
               exit={{ x: "100%" }}
               transition={{ type: "tween", duration: 0.3, ease: "easeInOut" }}
-              className="fixed top-0 right-0 h-full w-[70%] z-[100] bg-[#F5F0E0] flex flex-col px-8 pt-6 pb-12 sm:hidden shadow-2xl"
+              className="fixed top-0 right-0 h-full w-[70%] z-[100] bg-light flex flex-col px-8 pt-6 pb-12 sm:hidden shadow-2xl"
             >
               {/* Close */}
               <div className="flex justify-end mb-12">
@@ -145,7 +145,7 @@ export default function Header() {
                       <Link
                         href={href}
                         onClick={close}
-                        className="font-display italic text-[1.4rem] text-[#2A4A3E] hover:text-[#C4588A] transition-colors leading-none"
+                        className="font-display italic text-[1.2rem] text-dark hover:text-[#C4588A] transition-colors leading-none"
                       >
                         {label}
                       </Link>
