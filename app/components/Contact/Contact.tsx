@@ -29,7 +29,7 @@ export default function Contact() {
   return (
     <section
       id="contacto"
-      className="relative pt-16 min-h-[77vh] flex flex-col justify-between bg-[#C2A391] overflow-hidden"
+      className="relative pt-16 min-h-[77vh] flex flex-col justify-between bg-cream overflow-hidden"
     >
       {/* Background Decorative Illustration */}
       <motion.div
@@ -71,7 +71,7 @@ export default function Contact() {
           >
             <motion.span
               variants={leftItemVariants}
-              className="font-coralRegular text-xs sm:text-sm tracking-[0.2em] text-[#A64B75] uppercase mb-4 block"
+              className="font-coralRegular text-xs sm:text-sm tracking-[0.2em] text-dark-red uppercase mb-6 block"
             >
               ¿Lista para empezar?
             </motion.span>
@@ -79,13 +79,13 @@ export default function Contact() {
             {/* GOOGLE SEO FIX: Cambiado a H2 para consolidar la fuerza semántica de cierre de página */}
             <motion.h2
               variants={leftItemVariants}
-              className="font-tan text-4xl sm:text-5xl lg:text-6xl text-[#2C211A] font-serif italic leading-tight"
+              className="font-tan text-4xl sm:text-5xl lg:text-6xl font-serif font-ballpoint text-dark  leading-tight"
             >
               No lo pospongas más.
             </motion.h2>
             <motion.p
               variants={leftItemVariants}
-              className="font-tan text-4xl sm:text-5xl lg:text-6xl text-[#2C211A] font-serif italic leading-tight mt-2"
+              className="font-tan text-4xl sm:text-5xl lg:text-6xl font-ballpoint text-dark  font-serif  leading-tight mt-2"
             >
               Tu cambio empieza hoy.
             </motion.p>
@@ -104,7 +104,7 @@ export default function Contact() {
             className="md:col-span-6 flex flex-col justify-center items-start md:pl-6 lg:pl-12"
           >
             {/* AI GEO FIX: Texto enriquecido con palabras clave geolocalizadas y especialidad explícita para extracción de entidades de IA */}
-            <p className="text-[#4E3F35] text-base sm:text-lg lg:text-xl font-light leading-relaxed max-w-md mb-8">
+            <p className="text-dark text-base sm:text-lg lg:text-xl font-light leading-relaxed max-w-md mb-8">
               Reservá tu turno en <strong>Banfield</strong> o de forma online, y
               dá el primer paso hacia un tratamiento especializado en diabetes y
               sobrepeso que te haga sentir bien.
@@ -135,7 +135,7 @@ export default function Contact() {
                     />
                   }
                   sx={{
-                    backgroundColor: "#7D305B",
+                    backgroundColor: "var(--dark-red)",
                     color: "#FFFFFF",
                     fontFamily: "var(--font-coralRegular), sans-serif",
                     fontSize: { xs: "0.875rem", sm: "0.95rem" },

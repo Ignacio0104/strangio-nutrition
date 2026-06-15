@@ -68,7 +68,7 @@ export default function Services() {
   return (
     <section
       id="servicios"
-      className="relative min-h-screen bg-[#3D6B5A] flex flex-col justify-center px-6 py-16 sm:px-12 md:py-24 lg:px-20 gap-6 md:gap-10"
+      className="relative min-h-screen bg-green flex flex-col justify-center px-6 py-16 sm:px-12 md:py-24 lg:px-20 gap-6 md:gap-10"
     >
       {/* ── Header ── */}
       <motion.div
@@ -79,10 +79,10 @@ export default function Services() {
         className="relative z-10 flex flex-col md:flex-row md:items-end md:justify-between gap-4"
       >
         <div>
-          <p className="font-sans text-[0.65rem] font-semibold tracking-[0.22em] uppercase text-[#E8A0C0] mb-2">
+          <p className="font-sans text-[0.65rem] font-semibold tracking-[0.22em] uppercase text-dark mb-2">
             Servicios Clínicos
           </p>
-          <h2 className="font-display italic font-light text-[#F5F0E0] leading-[1.1] tracking-[-0.01em] text-[1.8rem] sm:text-[2.5rem] lg:text-[3.5rem]">
+          <h2 className="font-display font-aristotelicaPro font-light text-light leading-[1.1] tracking-[-0.01em] text-[1.8rem] sm:text-[2.5rem] lg:text-[3.5rem]">
             ¿Cómo trabajo en consulta?
             <span className="sr-only">
               {" "}
@@ -127,7 +127,7 @@ export default function Services() {
                   >
                     {icon}
                   </div>
-                  <h3 className="font-display italic text-[0.95rem] text-[#F5F0E0] leading-tight">
+                  <h3 className="font-display italic text-[0.95rem] text-light leading-tight">
                     {title}
                   </h3>
                 </div>
@@ -217,7 +217,7 @@ export default function Services() {
       >
         <a
           href="#contacto"
-          className="inline-flex items-center gap-3 bg-[#F5F0E0] text-[#8B2E5E] rounded-full px-6 py-3 sm:px-7 sm:py-3.5 font-sans text-[0.68rem] sm:text-[0.72rem] font-semibold tracking-[0.12em] uppercase hover:opacity-90 transition-opacity w-fit shrink-0"
+          className="inline-flex items-center gap-3 bg-[#F5F0E0] text-dark-red rounded-full px-6 py-3 sm:px-7 sm:py-3.5 font-sans text-[0.68rem] sm:text-[0.72rem] font-semibold tracking-[0.12em] uppercase hover:opacity-90 transition-opacity w-fit shrink-0"
           title="Solicitar turno para consulta nutricional personalizada"
         >
           Reservar consulta
@@ -235,7 +235,7 @@ export default function Services() {
             <path d="M5 12h14M12 5l7 7-7 7" />
           </svg>
         </a>
-        <p className="font-sans text-[0.68rem] sm:text-[0.75rem] text-[#F5F0E0]/45 font-light max-w-md">
+        <p className="font-sans text-[0.68rem] sm:text-[0.75rem] text-dark font-light max-w-md">
           La primera consulta incluye un diagnóstico completo de composición
           corporal por bioimpedancia.
         </p>

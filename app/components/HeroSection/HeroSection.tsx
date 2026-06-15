@@ -27,7 +27,7 @@ export default function HeroSection() {
   return (
     <section
       id="principal"
-      className="relative min-h-screen bg-[#C4588A] overflow-hidden flex flex-col md:flex-row"
+      className="relative min-h-screen bg-cream overflow-hidden flex flex-col md:flex-row"
     >
       {/* Background Avocado Image - Subtle Fade In */}
       <motion.div
@@ -35,18 +35,7 @@ export default function HeroSection() {
         animate={{ opacity: 1 }}
         transition={{ duration: 1, delay: 0.4 }}
         className="absolute top-40 left-[25vw] z-0 pointer-events-none"
-      >
-        <Image
-          src="/resources/Images/avocado.png"
-          // SEO FIX: Alt descriptivo con contexto de nutrición
-          alt="Ilustración decorativa de aguacate - Planificación nutricional saludable"
-          width={600}
-          height={600}
-          className="text-[#F5F0E0]/10"
-          quality={100}
-          priority
-        />
-      </motion.div>
+      ></motion.div>
 
       {/* ── LEFT COLUMN ─────────────────────────────────── */}
       <motion.div
@@ -58,7 +47,7 @@ export default function HeroSection() {
         {/* Eyebrow */}
         <motion.p
           variants={itemVariants}
-          className="font-sans text-[0.65rem] font-semibold tracking-[0.22em] uppercase text-[#F5F0E0]/70 mb-5"
+          className="font-sans text-[0.65rem] font-semibold tracking-[0.22em] uppercase text-dark-red mb-5"
         >
           Nutricionista clínica · Especialista en diabetes y sobrepeso
         </motion.p>
@@ -67,7 +56,7 @@ export default function HeroSection() {
         {/* AI & GOOGLE FIX: Inyección de entidad profesional oculta para que los bots identifiquen el H1 con su nicho */}
         <motion.h1
           variants={itemVariants}
-          className="font-display font-light italic text-[#F5F0E0] leading-[1.0] tracking-[-0.01em] mb-5"
+          className="font-display font-archivoBlack font-light text-light leading-[1.0] tracking-[-0.1em] mb-5"
           style={{ fontSize: "clamp(3rem, 7vw, 5.5rem)" }}
         >
           Lic. Antonella
@@ -79,13 +68,13 @@ export default function HeroSection() {
         {/* Divider line */}
         <motion.div
           variants={itemVariants}
-          className="w-16 h-px bg-[#F5F0E0]/40 mb-5"
+          className="w-16 h-px bg-dark-red mb-5"
         />
 
         {/* Subtitle */}
         <motion.p
           variants={itemVariants}
-          className="font-sans font-light text-[#F5F0E0]/80 leading-relaxed max-w-sm mb-0 md:mb-10 text-[0.95rem] sm:text-base"
+          className="font-sans font-light text-dark-red leading-relaxed max-w-sm mb-0 md:mb-10 text-[0.95rem] sm:text-base"
         >
           Crea una relación saludable con la comida a través de hábitos simples,
           planes personalizados y tratamientos sostenibles para mejorar tu
@@ -144,7 +133,7 @@ export default function HeroSection() {
 
             <a
               href="#servicios"
-              className="inline-flex items-center gap-2 text-[#F5F0E0]/70 font-sans text-[0.72rem] font-medium tracking-[0.1em] uppercase hover:text-[#F5F0E0] transition-colors whitespace-nowrap"
+              className="inline-flex items-center gap-2 text-dark font-sans text-[0.72rem] font-medium tracking-[0.1em] uppercase hover:text-[#F5F0E0] transition-colors whitespace-nowrap"
               title="Ver tratamientos de nutrición clínica y obesidad"
             >
               Ver servicios
