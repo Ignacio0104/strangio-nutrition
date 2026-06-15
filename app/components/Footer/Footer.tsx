@@ -5,7 +5,7 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="w-full bg-[#1A3323] text-white z-50 py-4 md:py-6 mt-auto border-t border-white/10 flex items-center min-h-[110px] max-h-[180px] md:max-h-[195px]">
+    <footer className="w-full bg-dark text-white z-50 py-4 md:py-6 mt-auto border-t border-white/10 flex items-center min-h-[110px] max-h-[180px] md:max-h-[195px]">
       <div className="max-w-6xl w-full mx-auto flex flex-col justify-center px-6 sm:px-12 gap-3 md:gap-4">
         {/* Main Flex Layout: Row on desktop, Column on mobile for tight packing */}
         <div className="flex flex-col md:flex-row items-center justify-between gap-3 md:gap-4">
@@ -26,11 +26,11 @@ export default function Footer() {
 
           {/* 2. Professional Title Branding */}
           <div className="w-full md:w-[50%] flex flex-col items-center justify-center text-center">
-            <p className="font-tan text-sm sm:text-base sm:block hidden tracking-wide font-serif leading-none">
+            <p className="font-tan text-light text-sm sm:text-base sm:block hidden tracking-wide font-serif leading-none">
               Antonella Strangio
             </p>
             {/* SEO Keyword in single line on desktop */}
-            <p className="text-[10px] sm:text-xs uppercase tracking-[0.12em] opacity-90 mt-1 text-[#C2A391] font-light">
+            <p className="text-[10px] sm:text-xs uppercase tracking-[0.12em] opacity-90 mt-1 text-light font-light">
               Nutricionista clínica · Diabetes y Sobrepeso
             </p>
           </div>

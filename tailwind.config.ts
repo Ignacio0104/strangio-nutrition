@@ -39,6 +39,8 @@ export default {
         coralLight: ["coralLight", "sans-serif"],
         coralRegular: ["coralRegular", "sans-serif"],
         archivoBlack: ["archivoBlack", "sans-serif"],
+        aristotelicaPro: ["aristotelicaPro", "sans-serif"],
+        ballpoint: ["ballpoint", "sans-serif"],
       },
     },
   },

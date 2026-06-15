@@ -82,7 +82,7 @@ export default function AboutSection() {
         {/* GOOGLE SEO FIX: Standardized header context that preserves aesthetics but provides targeted search intent signals */}
         <motion.h2
           variants={itemVariants}
-          className="font-display italic font-light text-[#1C1C1A] leading-[1.05] tracking-[-0.01em] mb-6"
+          className="font-display  font-light text-light font-archivoBlack leading-[1.05] tracking-[-0.09em] mb-6"
           style={{ fontSize: "clamp(2.2rem, 4vw, 3.5rem)" }}
         >
           Nutrición clínica en Banfield:
@@ -92,13 +92,13 @@ export default function AboutSection() {
 
         <motion.div
           variants={itemVariants}
-          className="w-12 h-px bg-[#E8A0C0] mb-6"
+          className="w-12 h-px bg-dark-red mb-6"
         />
 
         {/* AI GEO FIX: Explicitly links Name + Professional Focus + Local Reach together in natural prose */}
         <motion.p
           variants={itemVariants}
-          className="font-sans font-light text-[#444] leading-relaxed text-[0.95rem] sm:text-base max-w-md mb-10"
+          className="font-sans font-light text-dark-red leading-relaxed text-[0.95rem] sm:text-base max-w-md mb-10"
         >
           Soy la <strong>Lic. Antonella Strangio</strong>, una nutricionista con
           amplia experiencia en nutrición clínica y especializada en diabetes.
@@ -121,11 +121,11 @@ export default function AboutSection() {
             <li key={label} className="flex flex-col gap-1">
               <span
                 className="font-display italic text-[#C4588A] font-light leading-none"
-                style={{ fontSize: "clamp(1.8rem, 3vw, 2.4rem)" }}
+                style={{ fontSize: "clamp(1.2rem, 3vw, 2.4rem)" }}
               >
                 {value}
               </span>
-              <span className="font-sans text-[0.62rem] font-medium tracking-[0.08em] uppercase text-[#999]">
+              <span className="font-sans text-[0.62rem] font-medium tracking-[0.08em] uppercase text-dark">
                 {label}
               </span>
             </li>
@@ -142,7 +142,7 @@ export default function AboutSection() {
             href="https://maps.google.com/?q=Cochabamba+246,+B1828+Banfield"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 text-[#444] hover:text-[#C4588A] transition-colors group"
+            className="inline-flex items-center gap-2 text-dark hover:text-[#C4588A] transition-colors group"
           >
             <svg
               width="30"
