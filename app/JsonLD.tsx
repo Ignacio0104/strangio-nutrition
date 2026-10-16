@@ -35,7 +35,7 @@ export function JsonLd() {
               name: "Lic. Antonella Strangio - Nutricionista",
               url: "https://yourdomain.com",
               image: "https://yourdomain.com/resources/Images/anto-logo.png",
-              telephone: "+5491161058110",
+              telephone: "+5491131055830",
               priceRange: "$$",
               medicalSpecialty: "DietNutrition",
               // AI & GEO FIX: Conectamos los perfiles exactos del footer para consolidar la autoridad de la entidad

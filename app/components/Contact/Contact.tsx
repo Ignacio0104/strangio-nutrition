@@ -112,7 +112,7 @@ export default function Contact() {
 
             <div className="flex flex-col items-start gap-4 w-full">
               <a
-                href="https://wa.me/5491161058110?text=Hola%2C+quiero+m%C3%A1s+informaci%C3%B3n+sobre+los+turnos+de+nutricion"
+                href="https://wa.me/5491131055830?text=Hola%2C+quiero+m%C3%A1s+informaci%C3%B3n+sobre+los+turnos+de+nutricion"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full sm:w-auto"

@@ -76,7 +76,7 @@ export default function Footer() {
               </a>
 
               <a
-                href="https://wa.me/5491161058110?text=Hola%2C+quiero+m%C3%A1s+informaci%C3%B3n+sobre+los+turnos+de+nutricion"
+                href="https://wa.me/5491131055830?text=Hola%2C+quiero+m%C3%A1s+informaci%C3%B3n+sobre+los+turnos+de+nutricion"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:scale-105 transition-transform"
